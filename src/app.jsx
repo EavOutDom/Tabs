@@ -37,7 +37,7 @@ const App = () => {
                     {jobs.map((data, index) => {
                         return (
                             <button onClick={() => setValue(index)}
-                              className={`text-start mx-2 hover:shadow-md hover:text-yellow-400 p-1 transition-all delay-300 ${value === index && 'text-yellow-400 shadow-md'}`}
+                              className={`text-start mx-2 hover:shadow-md hover:text-yellow-400 p-1 ${value === index && 'text-yellow-400 shadow-md'}`}
                             >
                                 {data.company}
                             </button>
