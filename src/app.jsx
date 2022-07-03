@@ -27,13 +27,13 @@ const App = () => {
     }
     const { company, dates, duties, id, order, title } = jobs[value];
     return (
-        <div>
-            <div className="mt-10 text-2xl font-bold text-center">
+        <div className={'px-2'}>
+            <div className="mt-10 md:text-2xl text-xl duration-500 font-bold text-center">
                 Experience
             </div>
-            <div className="h-1 bg-yellow-300 w-36 my-1 mx-auto"></div>
-            <div className="flex justify-center mt-8 mx-auto">
-                <div className="flex flex-col w-40">
+            <div className="h-1 bg-yellow-300 md:w-36 w-28 duration-500 my-1 mx-auto"></div>
+            <div className="md:flex justify-center mt-8 mx-auto">
+                <div className="flex md:flex-col w-40">
                     {jobs.map((data, index) => {
                         return (
                             <button onClick={() => setValue(index)}
@@ -44,7 +44,7 @@ const App = () => {
                         );
                     })}
                 </div>
-                <div className="w-[600px] max-w-[700px]">
+                <div className="">
                     <h2 className="font-bold">{title}</h2>
                     <h3 className="bg-yellow-300 table text-[10px] p-1 rounded-sm my-2 text-white">
                         {company}
@@ -59,7 +59,7 @@ const App = () => {
                                         <p className="mr-8 text-lg text-yellow-400">
                                             »
                                         </p>
-                                        <p>{data}</p>
+                                        <p className={'w-3/4'}>{data}</p>
                                     </div>
                                 </div>
                             );
